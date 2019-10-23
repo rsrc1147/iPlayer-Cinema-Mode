@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "iPlayer Cinema Mode",
+  "description": "Change BBC's iPlayer's default view to a full browser width",
+  "version": "0.3",
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "css": ["style.css"],
+    "js": ["style.js"],
+    "run_at": "document_start"
+  }],
+  "browser_action": {
+    "default_icon": "icon.png"
+   }
+}
